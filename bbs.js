@@ -85,6 +85,7 @@ app.use((req, res, next) => {
 //         console.log(data.toString())
 //     })
 // })
+app.use(express.static(__dirname + '/build'));
 app.use(express.static(__dirname + '/static'))
 app.use('/uploads', express.static(__dirname + '/uploads'))
 app.use(express.json())
